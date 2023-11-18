@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Неделя 10. Функции</title>
+	<link rel="stylesheet" href="./assets/style/normalize.css">
+	<link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+	<section class="container">
+		<div class="description">
+			<h1>**Задание под звёздочкой**</h1>
+			<h2>
+				Напишите функцию `calculateTotalPrice()`, которая принимает два аргумента: `quantity` (количество единиц
+				товара) и `price` (цена за единицу товара).Функция должна вычислить общую стоимость покупки и
+				вернуть это значение. Добавьте на кнопку атрибут `onclick`.При клике на кнопку должна вызываться функция
+				`calculateTotalPrice()`.
+				Напишите скрипт, который позволяет рассчитать стоимость покупки на основе заданных параметров.
+				- Алгоритм действий<br />
+				1. Вам необходимо создать функцию `calculateTotalPrice()`, которая принимает два аргумента - `quantity`
+				(количество товаров) и `price` (цена за единицу товара). Если значения не переданы, функция должна
+				использовать значения по умолчанию, например: `quantity = 2` и `price = 15000000`. <br />
+				2. Функция должна производить расчет общей стоимости покупки, умножая количество товаров на их цену.
+				Затем полученное значение необходимо отформатировать с использованием функции `toLocaleString('ru-RU')`,
+				чтобы отобразить разделитель тысяч и соответствующую валюту (рубли). <br />
+				3. Наконец, выведите результат расчета в виде сообщения с помощью функции `alert()`. Сообщение должно
+				содержать текст "Стоимость покупки: [форматированное значение] рублей".</h2>
+		</div>
+		<article>
+			<div class="sale">
+				<img id="image" class="image" src="./assets/imgs/house.webp" alt="Недвижимость">
+			</div>
+			<div class="bottom">
+				<button class="button" id="button">Узнать стоимость</button>
+				<p class="total"></p>
+			</div>
+		</article>
+	</section>
+	<script src="./script.js"></script>
+</body>
+
+</html>
